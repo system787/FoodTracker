@@ -48,6 +48,7 @@
                                     <outlet property="nameLabel" destination="87O-WO-MBy" id="e15-UF-u6S"/>
                                     <outlet property="photoImageView" destination="5k4-7h-1kK" id="kab-kQ-jG6"/>
                                     <outlet property="ratingControl" destination="OxP-Wj-G2R" id="muy-Mx-ecc"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="rz1-5O-7iL"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -59,7 +60,7 @@
                     <navigationItem key="navigationItem" title="Your Meals" id="FWs-1b-13w">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="o2d-AR-CT8">
                             <connections>
-                                <segue destination="meS-K7-fHK" kind="presentation" id="Q7X-fg-uh3"/>
+                                <segue destination="meS-K7-fHK" kind="presentation" identifier="AddItem" id="Q7X-fg-uh3"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -175,10 +176,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QfL-WA-jfJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="860" y="124.58770614692655"/>
+            <point key="canvasLocation" x="951" y="573"/>
         </scene>
     </scenes>
     <resources>
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="rz1-5O-7iL"/>
+    </inferredMetricsTieBreakers>
 </document>
